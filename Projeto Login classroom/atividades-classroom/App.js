@@ -25,18 +25,22 @@ export default function App() {
       <View style={styles.contentWrapper}>
         <View style={styles.contentGeneral}>
           <Text style={styles.dropDownListText}>Sem data de entrega</Text>
+          <Text style={styles.dropDownListText, {color:'#3d74ff', fontWeight:700, marginLeft:150}}>0</Text>
         </View>
 
         <View style={styles.contentGeneral}>
-          <Text style={styles.dropDownListText}>Sem data de entrega</Text>
+          <Text style={styles.dropDownListText}>Esta semana</Text>
+              <Text style={styles.dropDownListText, {color:'#3d74ff', fontWeight:700, marginLeft:200}}>0</Text>
         </View>
 
         <View style={styles.contentGeneral}>
-          <Text style={styles.dropDownListText}>Sem data de entrega</Text>
+          <Text style={styles.dropDownListText}>Proxima semana</Text>
+   <Text style={styles.dropDownListText, {color:'#3d74ff', fontWeight:700, marginLeft:176}}>0</Text>
         </View>
 
         <View style={styles.contentGeneral}>
-          <Text style={styles.dropDownListText}>Sem data de entrega</Text>
+          <Text style={styles.dropDownListText}>Depois da proxima semana</Text>
+   <Text style={styles.dropDownListText, {color:'#3d74ff', fontWeight:700, marginLeft:114}}>0</Text>
         </View>
       </View>
 
@@ -60,10 +64,10 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     textAlign: 'left',
     width: '100%',
-    marginLeft: 40,
+    marginLeft: '20%',
   },
   header:{
-    width: '100%',
+    width: '110%',
     display: 'flex',
     justifyContent:'center',
     alignItems: 'center',
@@ -93,6 +97,8 @@ const styles = StyleSheet.create({
   contentGeneral:{
     padding: 10,
     width: '100%',
+    display: 'flex',
+    flexDirection: 'row',
   },
   dropDownListText:{
     color: 'black',
